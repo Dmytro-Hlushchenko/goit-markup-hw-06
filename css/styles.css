@@ -538,6 +538,20 @@ ul {
     color: #FFFFFF;
 }
 
+.footer-email-block {
+    margin-left: 94px;
+}
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    color: #ffffff;
+    background-color: var(--active-text-color);
+    border: 1px solid var(--active-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
 /*PORTFOLIO main*/
 
 
@@ -725,6 +739,10 @@ ul {
     background-color: transparent;
     cursor: pointer;
     
+}
+
+.modal-button-close:hover {
+    fill: var(--active-text-color);
 }
 
 .icon-close {
