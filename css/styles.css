@@ -770,22 +770,33 @@ ul {
 
 }
 
-.modal-form {
-    display: ;
-}
-
 .modal-input {
     width: 100%;
     height: 40px;
     margin-bottom: 10px;
     cursor: pointer;
 
+    padding-left: 42px;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: 1px var(--active-text-color);
 
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier-primary);
+}
+
+.modal-box {
+    position: relative;
+}
+
+.icon-modal {
+    position: absolute;
+
+    top: 50%;
+    left: 12px;
+    transform: translateY(-30%);
 }
 
 .modal-input:hover,
@@ -798,11 +809,13 @@ ul {
 .lable-name {
     width: 22px;
     height: 14px;
+
+
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-
+   
     color: var(--secondary-text-color);
 
 }
@@ -824,15 +837,17 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
+   
+    outline: 1px var(--active-text-color);
 
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier-primary);
 }
 
-.check-conditions {
+.conditions-box {
     margin-bottom: 30px;
-
+    text-align: center;
 }
 
 .conditions {
@@ -845,6 +860,7 @@ ul {
 
 .condition-link {
     color: var(--active-text-color);
+    border-bottom: 1px solid var(--active-text-color);
 }
 
 .submit-button {
