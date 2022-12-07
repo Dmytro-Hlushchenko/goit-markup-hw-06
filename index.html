@@ -496,8 +496,8 @@
 
         <div class="footer-email-block"> 
           <p class="join-title">підпишітся на розсилку</p>
-          <input type="email">
-          <button type="button" class="footer-button">Підписатися
+          <input type="email" class="footer-email-input" >
+          <button type="submit" class="footer-button">Підписатися
             <svg width="24" height="24" >
               <use href="./images/icons.svg#icon-sign-up"/>
             </svg>        
@@ -516,6 +516,33 @@
             <use href="./images/icons.svg#button-close"/>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        
+        <form class="modal-form">
+          <div>
+            <label for="name" class="lable-name">Ім'я</label>
+              <input type="text" class="modal-input" name="name">
+          </div>
+          <div>
+            <label for="tel" class="lable-name">Телефон</label>
+              <input type="tel" class="modal-input" name="tel">
+          </div>
+          <div>
+            <label for="email" class="lable-name">Пошта</label>
+              <input type="email" class="modal-input" name="email">
+          </div>
+          <div>
+            <label for="comment" class="lable-name">Коментар</label>
+              <textarea name="comment" id="comment" class="modal-comment" placeholder="Введіть текст"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" name="conditions" class="check-conditions">
+              <label class="conditions" for="conditions">Погоджуюся з росилкою та приймаю
+                <a class="condition-link" href="#">Умови договору</a>
+              </label>
+          </div>
+          <button class="submit-button" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
