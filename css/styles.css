@@ -556,13 +556,12 @@ ul {
     width: 200px;
     height: 50px;
     margin-left: 12px;
+    cursor: pointer;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-
-color: #FFFFFF;
 
     color: #ffffff;
     background-color: var(--active-text-color);
@@ -877,20 +876,33 @@ color: #FFFFFF;
 }
 
 .condition {
-    position: relative;
-
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
 .condition-lable {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--secondary-text-color);
+
+}
+
+.condition-lable::before {
+    display: flex;
+    content: "";
+
+    width: 16px;
+    height: 15px;
+
+    border: 1px solid #000000;
+}
+
+.condition-input:checked + .condition-lable::before {
+    background-color: var(--active-text-color);
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .condition-link {
@@ -908,7 +920,7 @@ color: #FFFFFF;
     left: 0px;
     top: 50%;
 
-    /* transform: translateY(-60%); */
+    transform: translateY(-50%);
 
     fill: #ffffff;
     background-color: #ffffff;
@@ -916,15 +928,15 @@ color: #FFFFFF;
     border-radius: 2px;
 }
 
-.condition-input:focus-within + .check-icon {
-    background-color: var(--active-text-color);
+.condition-input {
+    visibility: hidden;
 }
 
 
 
 .submit-button {
     display: block;
-
+    
     margin-left: auto;
     margin-right: auto;
 

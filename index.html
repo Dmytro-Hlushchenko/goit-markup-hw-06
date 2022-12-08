@@ -523,50 +523,45 @@
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         
         <form class="modal-form">
-          <label for="name" class="lable-name">Ім'я
+          <label class="lable-name">Ім'я
             <div class="modal-item">
-              <input type="text" class="modal-input" name="name" id="name">
+              <input type="text" class="modal-input" name="name">
               <svg class="icon-modal" width="18" height="18" >
                 <use href="./images/icons.svg#icon-person-modal"/>
               </svg>        
             </div>
           </label>
           
-          <label for="tel" class="lable-name">Телефон
+          <label class="lable-name">Телефон
             <div class="modal-item">
-              <input type="tel" class="modal-input" name="tel" id="tel">
+              <input type="tel" class="modal-input" name="tel">
               <svg class="icon-modal" width="18" height="18" >
                 <use href="./images/icons.svg#icon-phone-modal"/>
               </svg>        
             </div>
           </label>
           
-          <label for="email" class="lable-name">Пошта
+          <label class="lable-name">Пошта
             <div class="modal-item">
-              <input type="email" class="modal-input" name="email" id="email">
+              <input type="email" class="modal-input" name="email">
               <svg class="icon-modal" width="18" height="18" >
                 <use href="./images/icons.svg#icon-email-modal"/>
               </svg>        
             </div>
           </label>
-          
-          
-          <label for="comment" class="lable-name">Коментар
+                    
+          <label class="lable-name">Коментар
             <div class="modal-item">
-              <textarea name="comment" id="comment" class="modal-comment" placeholder="Введіть текст"></textarea>
+              <textarea name="comment" class="modal-comment" placeholder="Введіть текст"></textarea>
             </div>
           </label>
 
           <div class="condition">
-            <label for="condition-checkbox">
-              <input class="condition-input" type="checkbox" name="condition-checkbox" id="condition-checkbox">
-              <svg class="check-icon" width="16" height="15">
-                <use href="./images/icons.svg#check-icon">
-              </svg>
-              <span class="condition-lable">Погоджуюся з росилкою та приймаю</span>
-              <a class="condition-link link" href="#" target="_blank">Умови договору</a>
-            </label>
+            <input class="condition-input" type="checkbox" name="condition-checkbox" id="cond">
+            <label for="cond" class="condition-lable">Погоджуюся з росилкою та приймаю</label>
+            <a class="condition-link link" href="#" target="_blank">Умови договору</a>
           </div>
+
           <button class="submit-button" type="submit">Відправити</button>
         </form>
       </div>
